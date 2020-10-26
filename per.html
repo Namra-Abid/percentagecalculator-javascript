@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>
+    Percentage calculator
+  </title>
+  <script type="text/javascript">
+    const ShowData =()=>{
+      let dcn=document.getElementById('dcn').value;
+      let cg=document.getElementById('cg').value;
+      let cc=document.getElementById('cc').value;
+      let cl=document.getElementById('cl').value;
+      console.log(dcn)
+      let total = parseFloat(dcn)+parseFloat(cg)+parseFloat(cc)+parseFloat(cl);
+      alert(total);
+      let per=(total/400)*100;
+      document.getElementById("show").innerHTML=`You scored ${total} oit of 400 and your Percentage is ${per}%`;
+    }
+  </script>
+
+  </head>
+  <body>
+    <h1> Percentage calculator</h1>
+    <br>
+    <form style="background-color:#8c7022" >
+    <div style="background-color:#d1b66b margin:35px 0 0px 100px">
+    <input type="text" placeholder="Networking" id="dcn">
+    </input>
+    <br>
+    <input type="text" placeholder="Graphics" id="cg">
+    </input>
+    <br>
+    <input type="text" placeholder="Compiler Construction" id="cc">
+    </input>
+    <br>
+    <input type="text" placeholder="Calculus" id="cl">
+    </input>
+    <br>
+    <br> <hr>
+
+    </div>
+    <br>
+
+    <div style="margin:35px 0 0px 100px">
+      <input type="button" value="Show" id="sp" onclick="ShowData()">  </input>
+      <p id=show> </p>
+      </div>
+      <hr>
+
+<form>
+  </body>
+</html>
